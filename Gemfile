@@ -46,10 +46,12 @@ gem "bootstrap", "~> 5.3.3"
 
 # trailblazer
 gem 'trailblazer'
-gem 'trailblazer-rails'
 gem 'trailblazer-cells'
 gem 'reform', '~> 2.1.0'
 gem "devise", "~> 4.9.4"
+gem 'reform-rails'
+gem 'trailblazer-macro'
+gem 'trailblazer-operation'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
