@@ -47,7 +47,7 @@ gem "bootstrap", "~> 5.3.3"
 # trailblazer
 gem 'trailblazer'
 gem 'trailblazer-cells'
-gem 'reform', '~> 2.1.0'
+gem 'reform', '~> 2.6.2'
 gem "devise", "~> 4.9.4"
 gem 'reform-rails'
 gem 'trailblazer-macro'

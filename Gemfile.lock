@@ -123,10 +123,9 @@ GEM
       railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
-    disposable (0.2.6)
-      declarative (~> 0.0.6)
-      representable (>= 2.4.0, <= 3.1.0)
-      uber
+    disposable (0.6.3)
+      declarative (>= 0.0.9, < 1.0.0)
+      representable (>= 3.1.1, < 4)
     dotenv (3.1.8)
     drb (2.2.3)
     ed25519 (1.4.0)
@@ -274,17 +273,17 @@ GEM
     rdoc (6.14.1)
       erb
       psych (>= 4.0.0)
-    reform (2.1.0)
-      disposable (>= 0.2.2, < 0.3.0)
-      representable (>= 2.4.0, < 3.1.0)
-      uber (~> 0.0.11)
+    reform (2.6.2)
+      disposable (>= 0.5.0, < 1.0.0)
+      representable (>= 3.1.1, < 4)
+      uber (< 0.2.0)
     reform-rails (0.1.0)
     regexp_parser (2.10.0)
     reline (0.6.1)
       io-console (~> 0.5)
-    representable (3.0.4)
+    representable (3.2.0)
       declarative (< 0.1.0)
-      declarative-option (< 0.2.0)
+      trailblazer-option (>= 0.1.1, < 0.2.0)
       uber (< 0.2.0)
     responders (3.1.1)
       actionpack (>= 5.2)
@@ -436,7 +435,7 @@ DEPENDENCIES
   propshaft
   puma (>= 5.0)
   rails (~> 8.0.2)
-  reform (~> 2.1.0)
+  reform (~> 2.6.2)
   reform-rails
   rubocop-rails-omakase
   selenium-webdriver
