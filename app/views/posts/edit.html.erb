@@ -1,12 +1,22 @@
-<% content_for :title, "Editing post" %>
+<h1>Editing "<%= @model.title %>"</h1>
 
-<h1>Editing post</h1>
+<%= simple_form_for @form, as: :post, url: post_path(@model.id), method: :patch do |form| %>
+  <div>
+    <%= form.label @model.title, style: "display: block" %>
+    <%= form.text_field :title %>
+  </div>
 
-<%= render "form", post: @post %>
+  <div>
+    <%= form.label @model.content, style: "display: block" %>
+    <%= form.textarea :content %>
+  </div>
 
-<br>
+  <div>
+    <%= form.number_field :user_id, id: :post_user_id, 
+    value: current_user.id , type: :hidden %>
+  </div>
 
-<div>
-  <%= link_to "Show this post", @post %> |
-  <%= link_to "Back to posts", posts_path %>
-</div>
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
