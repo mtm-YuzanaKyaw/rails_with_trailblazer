@@ -1,0 +1,2 @@
+module MoneyforwardCallbackHelper
+end
