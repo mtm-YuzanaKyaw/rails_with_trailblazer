@@ -1,0 +1,2 @@
+module MoneyforwardBillingsHelper
+end

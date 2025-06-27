@@ -1,0 +1,38 @@
+<% content_for :title, "Moneyforward Invoice" %>
+
+<h1>Moneyforward Invoice</h1>
+
+<div id="invoices">
+  <% @invoices.each do |invoice| %>
+    <p>
+        <strong>InvoiceID:</strong>
+        <%= invoice["id"] %>
+    </p>
+
+    <p>
+        <strong>PDF URL:</strong>
+        <%= link_to "Invoice Detail PDF", invoice["pdf_url"] %>
+    </p>
+    <p>
+        <strong>Partner:</strong>
+        <%= invoice["partner_name"] %>
+    </p>
+
+    <p>
+        <strong>Payment Status:</strong>
+        <%= invoice["payment_status"] %>
+    </p>
+
+        <p>
+        <strong>Billing Date:</strong>
+        <%= invoice["billing_date"] %>
+    </p>
+    <p>
+        <strong>Total Amouont:</strong>
+        <%= invoice["total_price"] %>
+    </p>
+    <p>
+      <%= link_to "Invoice Detail", moneyforward_billing_path(invoice["id"]) %>
+    </p>
+  <% end %>
+</div>

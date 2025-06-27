@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   get "home/index"
   get "moneyforward/callback", to: "moneyforward_callback#callback"
   get "moneyforward/authorize", to: "moneyforward_api#authorize"
+  # get "moneyforward/billings", to: "moneyforward_billings#index"
+  resources :moneyforward_billings, only: [:index, :show]
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

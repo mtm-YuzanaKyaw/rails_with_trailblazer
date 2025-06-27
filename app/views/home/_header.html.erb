@@ -16,6 +16,9 @@
               <li class="nav-item">
                 <%= link_to "MoneyForward", moneyforward_authorize_path , class:"nav-link" %>
               </li>
+              <li class="nav-item">
+                <%= link_to "SignOut", destroy_user_session_path , class:"nav-link" %>
+              </li>
             <% else %>
               <li class="nav-item">
                 <%= link_to "SiginIn", new_user_session_path , class:"nav-link" %>
